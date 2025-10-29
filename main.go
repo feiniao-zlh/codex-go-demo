@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 
 	"github.com/gin-gonic/gin"
@@ -8,6 +9,7 @@ import (
 
 func main() {
 	router := gin.Default()
+	fmt.Println("/")
 
 	// Basic health check route
 	router.GET("/ping", func(ctx *gin.Context) {
